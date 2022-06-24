@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Grape+Nuts&family=Kanit&family=Karla:wght@200&family=Roboto+Slab:wght@300&display=swap');
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --white: rgb(255, 255, 255);
+    --karla: 'Barlow';
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: var(--Light-Gray);
+}
+
+.card{
+    max-width: 580px;
+    box-shadow: 0px 5px 5px 5px rgba(224, 224, 224, 0.209);
+    font-family: var(--karla);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .one{
+    background: var(--white);
+    width: 100%;
+    padding: 25px;
+}  
+
+.one h5{
+    color: var(--Bright-Yellow);
+    margin: 10px 0;
+}
+.one h3{
+    color: var(--Cyan);
+    font-weight: 700;
+    margin: 10px 0;
+}
+.one p{
+    padding: 10px 0;
+    color: var(--Grayish-Blue);
+}
+
+.card .two{
+    /* background: rgb(56, 203, 11); */
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+       
+}  
+
+.card .two .two1{
+    background-color: var(--Cyan);
+    color: var(--white);
+    width: 50%;
+    padding: 40px;
+}
+.two1 p{
+    font-size: 12px;
+}
+
+.card .two .two1 h3,h1{
+    margin: 10px 0;
+}
+
+.card .two .two1 button{
+    background-color: var(--Bright-Yellow);
+    color: var(--white);
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px; 
+    border-radius: 7px;
+    border: none;   
+}
+.card .two .two2{
+    background-color: hsla(179, 62%, 43%, 0.809);
+    width: 50%;
+    color: var(--white);
+    padding: 25px;
+}
+
+.card .two .two2 h4{
+    margin: 10px 0;
+}
+.card .two .two2 p{
+   font-size: 14px;
+   
+}
+
+@media (max-width:600px) {  
+    .main{
+        height: auto;
+    }
+    .card{
+        margin: 25px 20px;
+    }
+    .two{
+        flex-direction: column;
+        width: 100%;
+    }
+    .two .two1, .two2{
+        width: 100% !important;
+    } 
+}
